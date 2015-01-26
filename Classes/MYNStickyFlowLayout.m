@@ -102,7 +102,7 @@
     attributes.hidden = NO;
 
     // last point of section minus height of header
-    CGFloat sectionMaxY = CGRectGetMaxY(lastCellAttributes.frame) - attributes.frame.size.height;
+    CGFloat sectionMaxY = CGRectGetMaxY(lastCellAttributes.frame) - attributes.frame.size.height + self.sectionInset.bottom;
 
     // top of the view
     CGFloat viewMinY = CGRectGetMinY(self.collectionView.bounds) + self.collectionView.contentInset.top;
